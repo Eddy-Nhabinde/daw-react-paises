@@ -1,0 +1,48 @@
+.firstDiv,
+.SecondDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.firstDiv div {
+    display: flex;
+}
+
+.firstDiv div span {
+    margin-top: 5px;
+    font-weight: bold;
+    color: grey;
+}
+
+.SecondDiv div span {
+    margin-top: 5px;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: -10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}

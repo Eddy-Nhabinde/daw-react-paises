@@ -1,0 +1,44 @@
+.body {
+    min-height: 100vh;
+    background: rgb(41, 126, 253);
+    background: linear-gradient(-180deg, rgba(41, 126, 253, 1) 15%, rgba(255, 255, 255, 1) 15%);
+}
+
+.body h1 {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.serachContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .pesquisa {
+    margin-top: 25px;
+    padding-left: 15px;
+    width: 25%;
+    border: solid 1.3px rgba(159, 159, 159, 0.518);
+    border-radius: 6px;
+    background-color: white;
+}
+
+.body input {
+    border: none;
+    margin-left: 10px;
+    width: 100px;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.body i {
+    margin-top: 10px;
+    margin-right: 3px;
+    color: rgba(128, 128, 128, 0.598);
+}
