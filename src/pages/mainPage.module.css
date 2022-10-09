@@ -1,7 +1,7 @@
 .body {
-    min-height: 100vh;
+    max-height: 20vh;
     background: rgb(41, 126, 253);
-    background: linear-gradient(-180deg, rgba(41, 126, 253, 1) 15%, rgba(255, 255, 255, 1) 15%);
+    background: linear-gradient(-180deg, rgba(41, 126, 253, 1) 78%, rgba(255, 255, 255, 1) 15%);
 }
 
 .body h1 {
