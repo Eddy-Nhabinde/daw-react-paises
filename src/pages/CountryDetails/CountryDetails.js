@@ -5,6 +5,7 @@ export function CountryDetails({ details }) {
     return (
         <div className={styles.container}>
             <h1>{details.name.common}</h1>
+            
             <Link to='/' style={{ textDecoration: 'none' }}>
                 <div>
                     <i class="fa-solid fa-arrow-left"></i>
