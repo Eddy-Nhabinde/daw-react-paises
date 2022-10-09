@@ -1,25 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from './countryList.module.css'
 
-export function Lista() {
-    const [paises, setPaises] = useState("")
-
-    useEffect(() => {
-        fetch('https://restcountries.com/v3.1/all')
-            .then((response) => response.json())
-            .then((data) => setPaises(data));
-    }, [])
+export function Lista({ paises }) {
 
     return (
-        <div className={styles.paises}>
-            {paises && paises.map((val, id) => {
-                console.log(val)
-                return (
-                    <div>
-                        <img src={val.flags.png}></img>
-                    </div>
-                )
-            })}
-        </div>
+        <>{paises.length > 1 ?
+            < div className={styles.paises}>
+                {paises && paises.map((val, id) => {
+                    return (
+                        <div>
+                            <img src={val.flags.png}></img>
+                            <h2>Nome Comum:&nbsp;&nbsp;&nbsp;<span>{val.name.common}</span></h2>
+                            {val.region}
+                        </div>
+                    )
+                })}
+            </div>
+            :
+            < div className={styles.pais}>
+                {paises && paises.map((val, id) => {
+                    return (
+                        <div>
+                            <img src={val.flags.png}></img>
+                            <h2>Nome Comum:&nbsp;&nbsp;&nbsp;<span>{val.name.common}</span></h2>
+                            {val.region}
+                        </div>
+                    )
+                })}
+            </div>
+        }
+        </>
     )
 }

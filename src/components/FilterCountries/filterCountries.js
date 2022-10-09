@@ -1,6 +1,6 @@
 import styles from './filterCountries.module.css'
 
-export function FilterCountries() {
+export function FilterCountries({ paises, setParam }) {
     return (
         <div className={styles.container}>
             <div className={styles.firstDiv}>
@@ -20,14 +20,16 @@ export function FilterCountries() {
             <div className={styles.SecondDiv}>
                 <div>
                     <ul>
-                        <li>Home</li>
-                        <li>News</li>
-                        <li>Contact</li>
-                        <li>About</li>
+                        <li>Todas</li>
+                        <li>Africa</li>
+                        <li>Europa</li>
+                        <li>Asia</li>
+                        <li>America</li>
+                        <li>Oceania</li>
                     </ul>
                 </div>
                 <div>
-                    <span>250 Paises Pertencentes a Esta Categoria</span>
+                    <span>{paises.length} Paises Pertencentes a Esta Categoria</span>
                 </div>
             </div>
         </div>
