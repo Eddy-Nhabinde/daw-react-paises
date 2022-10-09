@@ -4,7 +4,7 @@ import { Lista } from '../components/countryList/countryList'
 import { useState } from 'react'
 import { Fetch } from '../utils/FetchData'
 
-export function MainPage() {
+export function MainPage({setDetails}) {
     const [paises, setPaises] = useState("")
     const [param, setParam] = useState("all")
 
@@ -29,7 +29,7 @@ export function MainPage() {
                     </div>
                 </div>
                 <FilterCountries paises={paises} setParam={setParam} />
-                <Lista paises={paises} />
+                <Lista paises={paises} setDetails={setDetails} />
             </div>
         </>
     )
