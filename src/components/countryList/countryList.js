@@ -30,7 +30,6 @@ export function Lista({ paises, setDetails }) {
                                 <span>{val.region}</span>
                             </div>
                         </Link>
-
                     )
                 })}
             </div>

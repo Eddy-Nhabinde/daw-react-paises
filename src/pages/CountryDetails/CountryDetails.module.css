@@ -1,0 +1,47 @@
+.container {
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.container h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Details {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Details img {
+    width: 45%;
+    height: 280px;
+}
+
+table {
+    margin-top: 10px;
+}
+
+td{
+    color: #334680;
+}
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 150px;
+}
+
+.container tr {
+    line-height: 35px;
+}
+
+.maps{
+    width: 100%;
+    margin-top: 30px;
+    height: 70vh;
+    margin-bottom: 20px;
+}
