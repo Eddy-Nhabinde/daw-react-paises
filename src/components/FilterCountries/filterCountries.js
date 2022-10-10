@@ -1,9 +1,6 @@
 import styles from './filterCountries.module.css'
 
 export function FilterCountries({ paises, setParam }) {
-    const clicou = (region) => {
-
-    }
 
     return (
         <div className={styles.container}>
@@ -24,12 +21,12 @@ export function FilterCountries({ paises, setParam }) {
             <div className={styles.SecondDiv}>
                 <div>
                     <ul>
-                        <li onClick={() => { clicou(setParam('all')) }}>Todas</li>
-                        <li onClick={() => { clicou(setParam('region/africa')) }}>Africa</li>
-                        <li onClick={() => { clicou(setParam('region/europe')) }}>Europa</li>
-                        <li onClick={() => { clicou(setParam('region/asia')) }}>Asia</li>
-                        <li onClick={() => { clicou(setParam('region/ame')) }}>America</li>
-                        <li onClick={() => { clicou(setParam('region/oceania')) }}>Oceania</li>
+                        <li onClick={() => { setParam('all') }}>Todas</li>
+                        <li onClick={() => { setParam('region/africa') }}>Africa</li>
+                        <li onClick={() => { setParam('region/europe') }}>Europa</li>
+                        <li onClick={() => { setParam('region/asia') }}>Asia</li>
+                        <li onClick={() => { setParam('region/ame') }}>America</li>
+                        <li onClick={() => { setParam('region/oceania') }}>Oceania</li>
                     </ul>
                 </div>
                 <div>
